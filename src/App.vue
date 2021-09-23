@@ -1,5 +1,5 @@
 <template>
-  <FolderView name="$" :folders="folders" :files="files" />
+  <FolderView name="$main" :folders="folders" :files="files" />
 </template>
 
 <script>
@@ -20,5 +20,23 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 968px;
+  margin: auto;
+  background-color: #fff;
+  padding: 25px;
+  border: 1px solid #000;
+  border-radius: 25px;
+}
+body {
+  background: -webkit-linear-gradient(45deg, rgb(197, 64, 229), rgb(45, 90, 199));
+  background: -moz-linear-gradient(45deg, rgb(197, 64, 229), rgb(45, 90, 199));
+  background: linear-gradient(45deg, rgb(197, 64, 229), rgb(45, 90, 199));
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+#app {
+  > .folder-files {
+    border: 1px solid #ccc;
+  }
 }
 </style>
